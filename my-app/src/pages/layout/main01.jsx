@@ -1,11 +1,15 @@
-import { Col, Row } from 'antd';
+import { Col, Row, Menu } from 'antd';
 import logo from '../../asset/logo-icon.png'
+import { SearchOutlined } from '@ant-design/icons';
+import { BtnLagre } from '../../components/btncomponent/btncomponent';
 
 const styles = {
-    BtnHover: {
-        '&:hover':{
-            backgroundColor: '#fff',
-        },
+    BtnNav: {
+        padding: '19 0',
+        ':hover':{
+            backgroundColor:'#fff',
+            cursor: 'poin'
+        }
     },
 };
 export const MainPage = () => {
@@ -28,13 +32,8 @@ export const MainPage = () => {
                             padding: 20,
                         }} />
                 </Col>
-                <Col span={1} order={7}
-                    className='BtnHover'
-                    style={{
-                        padding: '19 0',
-                    }}
-                >Discover</Col>
-                <Col span={1} order={7}>Job</Col>
+                <Col span={1} order={7} className='BtnNav'>Discover</Col>
+                <Col span={1} order={7} className='BtnNav'>Job</Col>
                 <Col span={15} order={7}>
                     <div className="searchInput"
                         style={{
@@ -54,9 +53,36 @@ export const MainPage = () => {
                     />
                 </div>
             </Col>
-            <Col span={1} order={7}></Col>
-            <Col span={1} order={7}>Login</Col>
-            <Col span={1} order={7}>Sign Up</Col>
+            <Col span={1} order={7}
+            style={{color:'#fff'}}>
+                <SearchOutlined />
+            </Col>
+            <Col span={1} order={7} className='BtnNav'>Login</Col>
+            <Col span={1} order={7} className='BtnNav'>Sign Up</Col>
+        </Row>
+        {/* <BtnLagre btnName={'davace'}/> */}
+        <Menu
+            mode={'horizontal'}
+            style={{
+                overflow:'visible',
+                lineHeight: '26px',
+                border: 'none',
+            }}
+        >
+            <BtnLagre btnName={'davace'}/>
+            <BtnLagre btnName={'davace'}/>
+            <BtnLagre btnName={'davace'}/>
+            <BtnLagre btnName={'davace'}/>
+            <BtnLagre btnName={'davace'}/>
+            <BtnLagre btnName={'davace'}/>
+            <BtnLagre btnName={'davace'}/>
+            <BtnLagre btnName={'davace'}/>
+        </Menu>
+        <Row style={{marginLeft:'20px'}}>
+            <Col span={2}>Motion trend pick</Col>
+            <Col span={1}>Latest</Col>
+            <Col span={2}>Recommended</Col>
+            <Col span={19} style={{textAlign:'right'}}>Selection criteria</Col>
         </Row>
         </>
     )
