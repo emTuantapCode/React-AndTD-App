@@ -1,7 +1,6 @@
-import Home from "../pages/mainlayout/home";
-import Detail from "../pages/detailProduct/detailProduct";
+import Home from "../pages/mainlayout/home/Home";
+
 const publicRoutes = [
   { path: "/", component: Home },
-  { path: "/detail", component: Detail },
 ];
 export default publicRoutes;
