@@ -26,7 +26,7 @@ const items2 = [UserOutlined, LaptopOutlined, NotificationOutlined].map(
 
 function Sidebar() {
   return (
-    <Sider width={200} className="site-layout-background">
+    <Sider width="100%" className="site-layout-background">
       <Menu
         mode="inline"
         defaultSelectedKeys={["1"]}
