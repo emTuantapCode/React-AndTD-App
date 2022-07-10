@@ -2,7 +2,6 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "antd/dist/antd.min.css";
 import publicRoutes from "./Routes";
-import "./asset/fontCss/font.css";
 
 function App() {
   return (
