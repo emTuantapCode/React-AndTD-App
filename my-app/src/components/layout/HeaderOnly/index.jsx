@@ -1,9 +1,9 @@
-import Header from "../Components/Header";
+import ThisHeader from "../Components/Header";
 
 function HeaderOnly({ children }) {
   return (
     <>
-      <Header />
+      <ThisHeader />
       <div className="container">
         <div className="content">{children}</div>
       </div>
