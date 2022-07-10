@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "antd/dist/antd.min.css";
-import publicRoutes from "./routes";
+import publicRoutes from "./Routes";
 
 function App() {
   return (

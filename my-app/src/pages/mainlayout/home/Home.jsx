@@ -8,7 +8,10 @@ function Home() {
         <Col span={6}>
             <NavSider/>
         </Col>
-        <Col span={18}>Hello2</Col>
+        <Col span={18}
+        style={{
+          minHeight:'1500px'
+        }}>Hello2</Col>
       </Row>
     </>
   );

@@ -1,22 +1,23 @@
 import { Col, Row } from "antd";
-import logo from '../../asset/logo-icon.png'
-import userIcon from '../../asset/icon/Group 10.png'
-import { homeI8 } from "../../i8/homei8";
+import logo from '../../asset/logo-icon.png';
+import userIcon from '../../asset/icon/Group 10.png';
+import { homeI8, listProducts } from "../../i8/homei8";
 import React from 'react';
 import { Layout, Menu } from "antd";
 
+
 const { Sider } = Layout;
-const itemslist = [homeI8.laptop,homeI8.phone,homeI8.keybroad,homeI8.others].map(
+const itemslist = [homeI8.laptop, homeI8.phone, homeI8.keybroad, homeI8.others].map(
   (value, index) => {
     const key = String(index + 1);
     return {
       key: `sub${key}`,
       label: `${value}`,
-      children: new Array(4).fill(null).map((_, j) => {
+      children: Object.entries(listProducts)[index][1].map((value, j) => {
         const subKey = index * 4 + j + 1;
         return {
           key: subKey,
-          label: `option${subKey}`,
+          label: `${value}`,
         };
       }),
     };
@@ -31,16 +32,21 @@ function NavSider() {
           style={{
             backgroundColor: '#211D1E',
             minWidth: '300px',
-            minHeight: '1000px',
+            minHeight: '100%',
+            position: 'fixed',
+            zIndex: 10000
           }}>
           <div className="logo">
             <img src={logo} alt="logo" />
           </div>
-          <div className="containerMenu">
-            <div className="userWellcome">
+          <div className="containerMenu"
+              style={{
+                maxHeight:'80%',
+                overflow:'hidden'
+              }}><div className="userWellcome">
               <Row>
-                <Col><img src={userIcon} alt="user" /></Col>
-                <Col style={{color:'#fff'}}>{homeI8.wellcom} Username</Col>
+                <Col><img src={userIcon} alt="user"/></Col>
+                <Col style={{ color: '#fff' }}>{homeI8.wellcom} Username</Col>
               </Row>
             </div>
             <div className="siderMenu">
