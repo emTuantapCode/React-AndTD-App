@@ -5,3 +5,6 @@ export const homeI8 = {
     keybroad : 'Bàn phím',
     others : 'Khác',
 }
+export const listProducts = [
+    
+]
