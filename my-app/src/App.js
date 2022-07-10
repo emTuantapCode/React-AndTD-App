@@ -1,21 +1,13 @@
-import './App.css';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
-import "antd/dist/antd.css";
-import { MainPage } from './pages/layout/main01'
-import { Login } from './pages/account/login'
-import { ForgetPassWord } from './pages/account/forgetpassword'
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "antd/dist/antd.min.css";
+import Home from "./pages/Home";
 
 function App() {
-  return(
+  return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<MainPage />}/>;
-        <Route path="/login" element={<Login />}/>;
-        <Route path="/forgetpassword" element={<ForgetPassWord />}/>;
+        <Route path="/" element={<Home />} />;
       </Routes>
     </BrowserRouter>
   );
