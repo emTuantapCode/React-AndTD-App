@@ -1,13 +1,13 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "antd/dist/antd.min.css";
-import Home from "./pages/Home";
+// import Home from "./pages/mainlayout/HomePage";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />;
+        {/* <Route path="/" element={<Home />} />; */}
       </Routes>
     </BrowserRouter>
   );
