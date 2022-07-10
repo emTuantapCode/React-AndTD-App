@@ -1,13 +1,16 @@
-import NavHeader from "../../components/layout/Components/Header";
-import { Row } from "antd";
+import { Row, Col } from "antd";
 import Sidebar from "../../components/layout/Components/Sidebar";
 function Home() {
   return (
     <>
-      <NavHeader />
-      <Row>
+    <Row>
+      <Col span={6}>
         <Sidebar />
-      </Row>
+      </Col>
+      <Col span={18}>
+
+      </Col>
+    </Row> 
     </>
   );
 }
