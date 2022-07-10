@@ -1,5 +1,5 @@
 import NavHeader from "../../components/layout/Components/Header";
-import { Col, Row } from "antd";
+import { Row } from "antd";
 import Sidebar from "../../components/layout/Components/Sidebar";
 function Home() {
   return (
