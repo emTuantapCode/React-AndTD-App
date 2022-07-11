@@ -1,7 +1,8 @@
+import Input from "../../../components/InputComponent/input"
 function SignUp() {
     return (
       <>
-        SignUp hello Long
+        <Input type='password' min="" max=""></Input>
       </>
     );
   }
