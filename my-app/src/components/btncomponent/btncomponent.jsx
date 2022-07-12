@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../../sass/font.scss"
 import "../../sass/BtnSass/Btn.scss";
 export const BtnMedium=(props)=>{
-    const [isHover,setIsHover]=useState(false);
+    
     return (
         <>
             <button className={'btn montserrat'} >
@@ -12,7 +12,7 @@ export const BtnMedium=(props)=>{
     )
 }
 export const BtnLarge=(props)=>{
-    const [isHover,setIsHover]=useState(false);
+    
     return (
         <>
             <button className={'btn montserrat'} >
@@ -23,7 +23,7 @@ export const BtnLarge=(props)=>{
 }
 
 export const BtnExtra=(props)=>{
-    const [isHover,setIsHover]=useState(false);
+    
     return (
         <>
             <button className={'btn montserrat'} >

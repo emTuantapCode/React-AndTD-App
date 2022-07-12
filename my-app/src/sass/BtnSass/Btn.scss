@@ -3,11 +3,11 @@
     border:none;
     border-radius:12px;
     cursor: pointer;
-    background-color:red;
+    background-color:#211d1e;
     transition:all .3s;
 
     &-content__medium{
-        color:"000";
+        color:white;
         font-size:15px;
         text-transform:uppercase;
         display: flex;
@@ -16,7 +16,7 @@
         padding: 6px;
     }
     &-content__large{
-        color:"000";
+        color:white;
         font-size:25px;
         text-transform:uppercase;
         display: flex;
@@ -25,17 +25,17 @@
         padding: 6px;
     }
     &-content__extra{
-        color:"000";
+        color:white;
         font-size:15px;
         text-transform:uppercase;
         display: flex;
         align-items:center;
         justify-content:center;
-        padding: 12px 60px;
+        padding: 18px 60px;
     }
 
     &:hover{
-        background-color:rgba(255, 0, 0, 0.466);
+        transform: translateY(-5px);
     }
 
     &:active{
