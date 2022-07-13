@@ -16,3 +16,11 @@ export const footer = {
     license : '@Sản phẩm này thuộc sở hữu của 2thousandtwo team',
     contact : 'Liên hê: 2thousandtwo.edu@gmail.com'
 }
+export const slidetext = {
+    slide1 : `sale sập sàn 1`,
+    slide2 : `sale sập sàn 2`,
+    slide3 : `sale sập sàn 3`,
+    slide4 : `sale sập sàn 3`,
+    slide5 : `sale sập sàn 4`,
+
+}

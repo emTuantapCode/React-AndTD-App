@@ -19,7 +19,7 @@ const itemslist = [homeI8.laptop, homeI8.phone, homeI8.keybroad, homeI8.others].
         const subKey = index * 4 + j + 1;
         return {
           key: subKey,
-          label: `${value}`,
+          label: `> ${value}`,
         };
       }),
     };
@@ -36,7 +36,7 @@ function NavSider() {
           </div>
           <div className="containerMenu">
             <div className="userWellcome">
-              <Row>
+              <Row className="user">
                 <Col className="user-icon"><img src={userIcon} alt="user"/></Col>
                 <Col className="user-name">{homeI8.wellcom} Username</Col>
               </Row>
@@ -55,6 +55,7 @@ function NavSider() {
             </div>
           </div>
           <div className="footer">
+            <hr/>
             <div className="license">{footer.license}</div>
             <p>{footer.contact}</p>
           </div>
