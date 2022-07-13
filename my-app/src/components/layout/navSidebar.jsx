@@ -1,9 +1,10 @@
 import { Col, Row } from "antd";
 import logo from '../../asset/logo-icon.png';
-import userIcon from '../../asset/icon/Group 10.png';
-import { homeI8, listProducts } from "../../i8/homei8";
+import userIcon from '../../asset/icon/usericon.png';
+import { homeI8, listProducts, footer } from "../../i8/homei8";
 import React from 'react';
 import { Layout, Menu } from "antd";
+import '../../scss/navSider.scss';
 
 
 const { Sider } = Layout;
@@ -13,11 +14,12 @@ const itemslist = [homeI8.laptop, homeI8.phone, homeI8.keybroad, homeI8.others].
     return {
       key: `sub${key}`,
       label: `${value}`,
+      className: 'productoptions',
       children: Object.entries(listProducts)[index][1].map((value, j) => {
         const subKey = index * 4 + j + 1;
         return {
           key: subKey,
-          label: `${value}`,
+          label: `> ${value}`,
         };
       }),
     };
@@ -28,25 +30,15 @@ function NavSider() {
   return (
     <>
       <Row>
-        <Col span={6}
-          style={{
-            backgroundColor: '#211D1E',
-            minWidth: '300px',
-            minHeight: '100%',
-            position: 'fixed',
-            zIndex: 10000
-          }}>
+        <Col span={6} className="containerSider">
           <div className="logo">
             <img src={logo} alt="logo" />
           </div>
-          <div className="containerMenu"
-              style={{
-                maxHeight:'80%',
-                overflow:'hidden'
-              }}><div className="userWellcome">
-              <Row>
-                <Col><img src={userIcon} alt="user"/></Col>
-                <Col style={{ color: '#fff' }}>{homeI8.wellcom} Username</Col>
+          <div className="containerMenu">
+            <div className="userWellcome">
+              <Row className="user">
+                <Col className="user-icon"><img src={userIcon} alt="user"/></Col>
+                <Col className="user-name">{homeI8.wellcom} Username</Col>
               </Row>
             </div>
             <div className="siderMenu">
@@ -61,6 +53,11 @@ function NavSider() {
                 />
               </Sider>
             </div>
+          </div>
+          <div className="footer">
+            <hr/>
+            <div className="license">{footer.license}</div>
+            <p>{footer.contact}</p>
           </div>
         </Col>
       </Row>

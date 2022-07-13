@@ -1,0 +1,45 @@
+.containerSider{
+    background-color: #211D1E;
+    min-width: 300px;
+    min-height: 100%;
+    position: fixed;
+    z-index: 10000;
+    color: #E9E2E2;
+
+    .logo{
+        height: 40px;
+        width: 200px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .user{
+        margin-left: 40px;
+        margin-bottom: 30px;
+
+        .user-icon{
+            padding: 8px 12px;
+        }
+        .user-name{
+            font-size: 18px;
+            padding: 14px 20px;
+        }
+    }
+    .siderMenu{
+        height: 480px;
+        max-height: 480px;
+        margin-left: 40px;
+        overflow: hidden!important;
+
+        .productoptions{
+            background-color: #211D1E;
+            color: #E9E2E2;
+            min-height: 50px;
+        }
+    }
+    .footer{
+        margin: 20px auto;
+        color: #E9E2E2;
+        text-align: center;
+        max-width: 80%;
+    }
+}
