@@ -9,15 +9,18 @@
   align-items: center;
   display: flex;
   z-index: 20000;
+  font-weight: 600;
 }
 
 .Popup-inner {
   position: relative;
   padding: 32px;
-  width: 30%;
+  width: 703px;
   background-color: #211d1e;
   border-radius: 20px;
   z-index: 30000;
+  height: 670px;
+  box-sizing: border-box;
 }
 .item {
   height: 50px;
