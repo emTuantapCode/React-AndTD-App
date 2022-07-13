@@ -1,10 +1,10 @@
-import { Col, Row } from "antd";
+import { Col, Row, Carousel } from "antd";
 import NavSider from "../../../components/layout/navSidebar";
-import '../../../scss/home.scss';
-import { Carousel } from 'antd';
+import ProductBox from '../../../components/productBoxComponent/productBox'
 import React from 'react';
 import ApiProduct from "../../../api/apiProducts";
 import { useState, useEffect } from "react";
+import '../../../scss/home.scss';
 
 const contentStyle = {
   height: '255px',
@@ -85,6 +85,16 @@ function Home() {
             </Col>
           </Row>
         </Col>
+      </Row>
+      <Row className="category-products">
+          <ProductBox/>
+          <ProductBox/>
+          <ProductBox/>
+          <ProductBox/>
+          <ProductBox/>
+          <ProductBox/>
+          <ProductBox/>
+          <ProductBox/> 
       </Row>
     </>
   );
