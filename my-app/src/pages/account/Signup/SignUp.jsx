@@ -18,7 +18,7 @@ function ValidatePhone(inputText)
 
 function SignUp() {
   const [submit,setSubmit] =useState(false);
-  const temp="";
+  let temp="";
     const [info,setInfo]=useState({
       email:'',
       phone:'',
@@ -30,6 +30,7 @@ function SignUp() {
     const takeUserNameInfo=(enteredInput)=>{
       let email='';
       let phone='';
+      temp=enteredInput;
       if(ValidateEmail(enteredInput)) email=enteredInput;
       else if(ValidatePhone(enteredInput)) phone=enteredInput;
       if(enteredInput.length===0) notiUserName='';
@@ -45,7 +46,7 @@ function SignUp() {
     }
     
     if(submit===true) {
-        if(info.email.length===0&&info.phone.length===0) notiUserName='Vui long nhap truong nay';
+        if(info.email.length===0&&info.phone.length===0&&temp=='') notiUserName='Vui long nhap truong nay';
         if(info.password.length===0) notiPassword='Vui long nhap truong nay';
     }
     const onSubmit=()=>{
