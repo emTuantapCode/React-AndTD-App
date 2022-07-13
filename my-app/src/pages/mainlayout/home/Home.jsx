@@ -38,7 +38,6 @@ function Home() {
     <>
       <Row className="Home">
         <Col span={6} className="layout-nav-sider">
-
           <NavSider />
         </Col>
         <Col span={22} className="layout-category">
