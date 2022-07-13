@@ -4,7 +4,8 @@
     border-radius:12px;
     cursor: pointer;
     background-color:#211d1e;
-    transition:all .3s;
+    transition:all .3s; 
+    min-width: 289px;
 
     &-content__medium{
         color:white;
