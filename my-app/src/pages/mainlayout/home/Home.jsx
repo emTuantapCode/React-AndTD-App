@@ -1,15 +1,12 @@
 import { Col, Row } from "antd";
 import NavSider from "../../../components/layout/navSidebar";
-import Popup from "../../Popup";
+import { BtnMedium } from "../../../components/btncomponent/btncomponent";
+
 function Home() {
   return (
     <>
-      <Popup />
       <Row>
-        <Col span={6}>
-          <NavSider />
-        </Col>
-        <Col span={18}>Hello2</Col>
+        <BtnMedium content={'buy now'}></BtnMedium>
       </Row>
     </>
   );
