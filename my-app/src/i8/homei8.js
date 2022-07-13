@@ -24,3 +24,4 @@ export const slidetext = {
     slide5 : `sale sập sàn 4`,
 
 }
+

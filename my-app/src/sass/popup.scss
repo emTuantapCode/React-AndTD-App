@@ -1,0 +1,50 @@
+.Popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  z-index: 20000;
+}
+
+.Popup-inner {
+  position: relative;
+  padding: 32px;
+  width: 30%;
+  background-color: #211d1e;
+  border-radius: 20px;
+  z-index: 30000;
+}
+.item {
+  height: 50px;
+  margin: 20px 0;
+  border: solid 3px white;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 20px;
+  &:hover {
+    background-color: #141213;
+  }
+}
+span {
+  margin: auto;
+}
+.logo {
+  margin-bottom: 5px;
+}
+.text {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+img {
+  padding-left: 10px;
+}
