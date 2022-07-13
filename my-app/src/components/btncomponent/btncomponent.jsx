@@ -2,8 +2,8 @@ import { useState } from "react";
 import "../../sass/font.scss"
 import "../../sass/BtnSass/Btn.scss";
 export const BtnMedium=(props)=>{
-    
-    return (
+    return(
+
         <>
             <button className={'btn montserrat'} >
                 <span  className={'btn-content__medium'}>{props.content}</span>
@@ -11,6 +11,7 @@ export const BtnMedium=(props)=>{
         </>
     )
 }
+
 export const BtnLarge=(props)=>{
     
     return (

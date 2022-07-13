@@ -15,17 +15,18 @@ function ValidatePhone(inputText)
   let oRegex = /^(0|\+84)(\s|\.)?((2[0-9][0-9])|(3[2-9])|(5[689])|(7[06-9])|(8[1-9])|(9[0-46-9]))(\d)(\s|\.)?(\d{3})(\s|\.)?(\d{3})$/;
   return (oRegex.test(inputText.trim()))
 }
+
 function SignUp() {
   const [submit,setSubmit] =useState(false);
+  const temp="";
     const [info,setInfo]=useState({
       email:'',
       phone:'',
       password:''
     })
-    
+
     let notiUserName='';
     let notiPassword='';
-
     const takeUserNameInfo=(enteredInput)=>{
       let email='';
       let phone='';
@@ -44,7 +45,8 @@ function SignUp() {
     }
     
     if(submit===true) {
-
+        if(info.email.length===0&&info.phone.length===0) notiUserName='Vui long nhap truong nay';
+        if(info.password.length===0) notiPassword='Vui long nhap truong nay';
     }
     const onSubmit=()=>{
       setSubmit(true);
