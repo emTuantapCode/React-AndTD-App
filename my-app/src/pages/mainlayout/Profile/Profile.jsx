@@ -1,6 +1,6 @@
 import { useState } from "react";
 import {Row,Col} from 'antd';
-import "../../../sass/profile/profile.scss";
+import "../../../scss/profile/profile.scss";
 import BuyList from "../../../components/ProfileComponents/BuyList";
 import User from "../../../components/ProfileComponents/User";
 import UserRank from "../../../components/ProfileComponents/UserRank";

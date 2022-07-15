@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "../../sass/font.scss"
-import "../../sass/BtnSass/Btn.scss";
+import "../../scss/font.scss"
+import "../../scss/BtnSass/Btn.scss";
 export const BtnMedium=(props)=>{
     return(
 

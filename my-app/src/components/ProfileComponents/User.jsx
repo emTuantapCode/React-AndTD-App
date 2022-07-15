@@ -3,7 +3,7 @@ import Cake from "../../asset/icon/cake.svg";
 import Phone from "../../asset/icon/phone2.svg";
 import Calender from "../../asset/icon/calender.svg";
 import Medal from "../../asset/icon/medal2.svg";
-import "../../sass/profile/user.scss";
+import "../../scss/profile/user.scss";
 
 const User=(props)=> {
     return (

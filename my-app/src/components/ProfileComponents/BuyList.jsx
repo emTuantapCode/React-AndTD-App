@@ -1,6 +1,6 @@
 import { Space, Table, Tag } from 'antd';   
-import "../../sass/profile/buyList.scss";
-import "../../sass/font.scss";
+import "../../scss/profile/buyList.scss";
+import "../../scss/font.scss";
 const BuyList=()=>{
     const list=[{
         key:'1',

@@ -1,10 +1,10 @@
 import {useState} from "react";
 import Input from "../../../components/InputComponent/input"
-import "../../../sass/signin.scss"
+import "../../../scss/signin.scss"
 import logo from "../../../asset/logo.svg";
 import {BtnExtra} from "../../../components/btncomponent/btncomponent";
-import "../../../sass/font.scss";
-import "../../../sass/signinsignup/someText.scss";
+import "../../../scss/font.scss";
+import "../../../scss/signinsignup/someText.scss";
 function ValidateEmail(inputText)
 {
   let oRegex = /[\w-\.]+@([\w-]+\.)+[\w-]{2,4}/g;
