@@ -24,15 +24,15 @@ function handleaccount() {
 }
 
 function Home() {
-  const [productList,setProductList] = useState([]);
-  useEffect(() =>{
-      const fetchProductList = async () =>{
-        const respones = await ApiProduct.getAll();
-        setProductList(respones)
-      }
-      fetchProductList()
-    },[]);
-    console.log(productList);
+  const [productList, setProductList] = useState([]);
+  useEffect(() => {
+    const fetchProductList = async () => {
+      const respones = await ApiProduct.getAll();
+      setProductList(respones)
+    }
+    fetchProductList()
+  }, []);
+  console.log(productList);
   return (
     <>
       <Row className="Home">
@@ -87,14 +87,33 @@ function Home() {
         </Col>
       </Row>
       <Row className="category-products">
-          <ProductBox/>
-          <ProductBox/>
-          <ProductBox/>
-          <ProductBox/>
-          <ProductBox/>
-          <ProductBox/>
-          <ProductBox/>
-          <ProductBox/> 
+        <Col span={6}>
+          <ProductBox />
+        </Col>
+        <Col span={6}>
+          <ProductBox />
+        </Col>
+        <Col span={6}>
+          <ProductBox />
+        </Col>
+        <Col span={6}>
+          <ProductBox />
+        </Col>
+        <Col span={6}>
+          <ProductBox />
+        </Col>
+        <Col span={6}>
+          <ProductBox />
+        </Col>
+        <Col span={6}>
+          <ProductBox />
+        </Col>
+        <Col span={6}>
+          <ProductBox />
+        </Col>
+        <Col span={6}>
+          <ProductBox />
+        </Col>
       </Row>
     </>
   );
