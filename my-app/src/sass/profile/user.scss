@@ -1,0 +1,49 @@
+.user{
+    &-container{
+        background-color:#211d1e;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        border-radius:20px;
+        min-height: 658px;
+    }
+
+    &-avatar{
+        width:188px;
+        height:188px;
+        margin-bottom: 40px;
+        align-self: center;
+        margin-top: 32px;
+    }
+
+    &-userName{
+        color:#fff;
+        font-size:45px;
+        font-weight:500;
+        align-self: center;
+        margin-bottom: 61px;
+    }
+
+    &-info{
+        display:flex;
+        justify-content:space-around;
+
+        &--item{
+            display:flex;
+            align-items: center;
+            flex-direction:column;
+        }
+
+        &--icon{
+            width:107px;
+            height:107px;
+            margin-bottom: 31px;
+        }
+
+        &--text{
+            font-size:22px;
+            font-weight:500;
+            color:#fff;
+        }
+    }
+}

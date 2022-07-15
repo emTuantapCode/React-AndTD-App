@@ -71,9 +71,11 @@ function SignUp() {
           <div style={{alignSelf:'end',marginTop:40+'px',}} onClick={onSubmit}>
             <BtnExtra content="Đăng nhập" ></BtnExtra>
           </div>
-          <a className='signin-text__light youwantsignup'>Bạn chưa có tài khoản?</a>
-          <div style={{alignSelf:'end',marginTop:30+'px',}} onClick={onSubmit}>
-            <BtnExtra content="Đăng kí" ></BtnExtra>
+          <a href="/signup" className='signin-text__light youwantsignup'>Bạn chưa có tài khoản?</a>
+          <div style={{alignSelf:'end',marginTop:30+'px',}} >
+            <a href='/signup'>
+              <BtnExtra content="Đăng kí" ></BtnExtra>
+            </a>
           </div>
 
         </div>

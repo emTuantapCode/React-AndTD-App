@@ -1,7 +1,7 @@
 import {useState} from "react";
 import Input from "../../../components/InputComponent/input"
 import "../../../sass/signin.scss"
-import logo from "../../../asset/logo.svg";
+import  logo from "../../../asset/logo.svg";
 import {BtnExtra} from "../../../components/btncomponent/btncomponent";
 import "../../../sass/font.scss";
 import "../../../sass/signinsignup/someText.scss";
