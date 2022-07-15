@@ -10,21 +10,25 @@
   display: flex;
   z-index: 20000;
   font-weight: 600;
+  font-size: medium;
+  .Popup-inner {
+    position: relative;
+    padding: 32px;
+    width: 703px;
+    background-color: #211d1e;
+    border-radius: 20px;
+    z-index: 30000;
+    height: 670px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
-.Popup-inner {
-  position: relative;
-  padding: 32px;
-  width: 703px;
-  background-color: #211d1e;
-  border-radius: 20px;
-  z-index: 30000;
-  height: 670px;
-  box-sizing: border-box;
-}
 .item {
-  height: 50px;
-  margin: 20px 0;
+  margin: 16px 50px;
+  height: 90px;
   border: solid 3px white;
   color: #fff;
   display: flex;
