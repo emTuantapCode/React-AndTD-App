@@ -1,7 +1,12 @@
 import Home from "../pages/mainlayout/home/Home";
-import Popup from "../pages/Popup";
+import Login from '../pages/account/Login/Login'
+import SignUp from '../pages/account/Signup/SignUp'
+import CartWaiting from "../pages/mainlayout/cartpage/Cartpage";
+
 const publicRoutes = [
   { path: "/", component: Home },
-  { path: "/popup", component: Popup },
+  { path: "/login", component: Login },
+  { path: "/signup", component: SignUp },
+  { path: "/cartwaiting", component: CartWaiting},
 ];
 export default publicRoutes;
