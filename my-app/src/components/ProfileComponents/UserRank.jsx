@@ -32,10 +32,7 @@ const UserRank=()=>{
                 <p className="rankInfo__title">{rankInfo[props]?.title}</p>
                 <p className="rankInfo__condition">{rankInfo[props]?.condition}</p>
                 <p className="rankInfo__endow">{rankInfo[props].endow}</p>
-                {rankInfo[props].endowContent.forEach((i)=>
-                   <p className="rankInfo__endowContent">{i}</p> 
-                )}
-                
+                {rankInfo[props].endowContent.map((content,i)=>{return (<p key={i} className="rankInfo__endowContent">{content}</p>)})}
             </>
         )
 
