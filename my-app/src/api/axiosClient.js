@@ -3,7 +3,6 @@ import queryString from "query-string";
 
 const axiosClients = axios.create({
   baseURL: "http://localhost:3006",
-
   paramsSerializer: (params) => queryString.tringify(params),
 });
 
