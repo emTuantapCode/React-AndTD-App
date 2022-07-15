@@ -1,8 +1,7 @@
-import { Card, Row } from "antd";
+import { Card, Row, Col } from "antd";
 import React from "react";
-import { BtnLagre } from "../btncomponent/btncomponent";
 
-function ProductBox({ src, index, name }) {
+function ProductBox({ src, index }) {
   return (
     <>
       <Card
@@ -10,7 +9,7 @@ function ProductBox({ src, index, name }) {
         hoverable
         style={{
           width: "100%",
-          height: "100%",
+          height: "324px",
           borderRadius: "24px",
           margin: "0 4px",
           marginBottom: "20px",
@@ -20,6 +19,7 @@ function ProductBox({ src, index, name }) {
             alt="example"
             style={{
               width: "100%",
+              height: "260px",
               borderRadius: "24px",
             }}
             src={src}
@@ -27,7 +27,7 @@ function ProductBox({ src, index, name }) {
         }
       >
         <Row>
-          Tên sản phẩm : {name} <BtnLagre content="MUA"></BtnLagre>
+          <Col></Col>
         </Row>
       </Card>
     </>

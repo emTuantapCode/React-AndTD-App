@@ -30,7 +30,6 @@ function Home() {
     const fetchProductList = async () => {
       const respones = await ApiProduct.getAll();
       setProductList(respones);
-      console.log(productList);
     };
     fetchProductList();
   }, []);
@@ -42,9 +41,9 @@ function Home() {
         <Col span={6} className="layout-nav-sider">
           <NavSider />
         </Col>
-        <Col span={20} className="layout-category">
+        <Col span={22} className="layout-category">
           <Row className="slider-toll">
-            <Col span={21} className="top-trending">
+            <Col span={18} className="top-trending">
               <Carousel autoplay>
                 <div>
                   <h3 style={contentStyle}>sale sap san 1</h3>
@@ -120,16 +119,11 @@ function Home() {
               </Row>
             </Col>
           </Row>
-          <Row gutter={6} justify="space-between" className="category-products">
+          <Row gutter={6} className="category-products">
             {productList.map((item, index) => {
               return (
-                <Col span={4}>
-                  <ProductBox
-                    src={item.image.src}
-                    name={item.productName}
-                    index={index}
-                  />
-                  ;
+                <Col>
+                  <ProductBox src={item.image.src} index={index} />;
                 </Col>
               );
             })}
