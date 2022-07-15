@@ -1,6 +1,5 @@
 import { Col, Row, Carousel } from "antd";
 import NavSider from "../../../components/layout/navSidebar";
-import Popup from "../../Popup";
 import ProductBox from '../../../components/productBoxComponent/productBox'
 import React from 'react';
 import ApiProduct from "../../../api/apiProducts";
