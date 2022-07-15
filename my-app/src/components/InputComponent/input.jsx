@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../../sass/signinsignup/inputComponent.scss";
+import "../../scss/signinsignup/inputComponent.scss";
 
 const Input=(props)=>{
     const [enteredInput,setEnteredInput]=useState('');
