@@ -12,6 +12,7 @@ export const BtnSmall=(props)=>{
     )
 }
 
+
 export const BtnMedium=(props)=>{
     return(
 
