@@ -27,7 +27,7 @@ function ProductBox({ src, index, name }) {
         }
       >
         <Row>
-          <Col>Tên sản phẩm : {name}</Col>
+          <Col style={{ minHeight: "50px" }}>Tên sản phẩm : {name}</Col>
         </Row>
         <Row justify="space-between">
           <Col span={6}>

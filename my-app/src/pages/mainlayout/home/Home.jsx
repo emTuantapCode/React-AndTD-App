@@ -38,11 +38,10 @@ function Home() {
     <>
       <Popup />
       <Row className="Home">
-        <Col span={6} className="layout-nav-sider">
-          <NavSider />
-        </Col>
+        <NavSider />
+
         <Col span={18} className="layout-category">
-          <Row className="slider-toll">
+          <Row gutter={8} className="slider-toll">
             <Col span={22} className="top-trending">
               <Carousel autoplay>
                 <div>
@@ -59,7 +58,7 @@ function Home() {
                 </div>
               </Carousel>
             </Col>
-            <Col span={1} className="toll">
+            <Col span={2} className="toll">
               <Row>
                 <div onClickCapture={() => opensearch()} className="tollfactor">
                   <svg
