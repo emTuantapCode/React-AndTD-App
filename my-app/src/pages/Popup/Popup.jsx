@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "../../sass/popup.scss";
+import "../../scss/popup.scss";
 import logo from "../../asset/logo-icon.png";
 import fb from "../../asset/icon/Vector.svg";
 import gm from "../../asset/icon/Vector (1).svg";
-const Popup = (prop) => {
+const Popup = () => {
   const [isModalVisible, setIsModalVisible] = useState(true);
   const style = !isModalVisible
     ? {

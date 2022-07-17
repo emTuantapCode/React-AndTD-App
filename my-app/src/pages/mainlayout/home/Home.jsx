@@ -1,6 +1,6 @@
 import { Col, Row, Carousel } from "antd";
 import NavSider from "../../../components/layout/navSidebar";
-import Popup from "../../Popup";
+import Popup from "../../Popup/Popup";
 import ProductBox from "../../../components/productBoxComponent/productBox";
 import React from "react";
 import ApiProduct from "../../../api/apiProducts";
@@ -41,9 +41,9 @@ function Home() {
         <Col span={6} className="layout-nav-sider">
           <NavSider />
         </Col>
-        <Col span={22} className="layout-category">
+        <Col span={18} className="layout-category">
           <Row className="slider-toll">
-            <Col span={18} className="top-trending">
+            <Col span={22} className="top-trending">
               <Carousel autoplay>
                 <div>
                   <h3 style={contentStyle}>sale sap san 1</h3>
@@ -59,7 +59,7 @@ function Home() {
                 </div>
               </Carousel>
             </Col>
-            <Col span={2} className="toll">
+            <Col span={1} className="toll">
               <Row>
                 <div onClickCapture={() => opensearch()} className="tollfactor">
                   <svg
@@ -119,11 +119,15 @@ function Home() {
               </Row>
             </Col>
           </Row>
-          <Row gutter={6} className="category-products">
+          <Row gutter={8}>
             {productList.map((item, index) => {
               return (
-                <Col>
-                  <ProductBox src={item.image.src} index={index} />;
+                <Col span={6}>
+                  <ProductBox
+                    src={item.image.src}
+                    name={item.productName}
+                    index={index}
+                  />
                 </Col>
               );
             })}

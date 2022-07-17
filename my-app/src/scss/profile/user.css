@@ -1,0 +1,67 @@
+.user-container {
+  background-color: #211d1e;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 20px;
+  min-height: 658px;
+}
+
+.user-avatar {
+  width: 188px;
+  height: 188px;
+  margin-bottom: 40px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 32px;
+}
+
+.user-userName {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 500;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 61px;
+}
+
+.user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.user-info--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.user-info--icon {
+  width: 107px;
+  height: 107px;
+  margin-bottom: 31px;
+}
+
+.user-info--text {
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+}
+/*# sourceMappingURL=user.css.map */
