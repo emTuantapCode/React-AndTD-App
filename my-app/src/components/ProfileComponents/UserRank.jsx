@@ -4,6 +4,7 @@ import DiamondRank from "../../asset/icon/diamondRank.svg";
 import { Steps } from 'antd';
 import "../../scss/profile/userRank.scss";
 const UserRank=()=>{
+    const rankUser=2;
     const rankInfo=[
         {
             title:"Điều kiện lên vàng",
@@ -28,12 +29,12 @@ const UserRank=()=>{
     const { Step } = Steps;
     const show=(props)=>{
         return(
-            <>
+            <div style={{marginLeft:'87px'}}>
                 <p className="rankInfo__title">{rankInfo[props]?.title}</p>
                 <p className="rankInfo__condition">{rankInfo[props]?.condition}</p>
                 <p className="rankInfo__endow">{rankInfo[props].endow}</p>
                 {rankInfo[props].endowContent.map((content,i)=>{return (<p key={i} className="rankInfo__endowContent">{content}</p>)})}
-            </>
+            </div>
         )
 
     }
@@ -65,12 +66,12 @@ const UserRank=()=>{
                         <p className="userRank__icon-container__item--text">Kim cương</p>
                     </div>
                 </div>
-                <Steps progressDot current={1}>
+                <Steps progressDot current={rankUser}>
                     <Step  />
                     <Step  />
                     <Step  />
                 </Steps>
-                {show(1)}
+                {show(rankUser)}
 
             </div>
         </div>

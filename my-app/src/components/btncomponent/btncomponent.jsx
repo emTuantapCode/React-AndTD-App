@@ -1,6 +1,17 @@
 import { useState } from "react";
 import "../../scss/font.scss"
 import "../../scss/BtnScss/Btn.scss";
+export const BtnSmall=(props)=>{
+    return(
+
+        <>
+            <button className={'btn montserrat'} >
+                <span  className={'btn-content__small'}>{props.content}</span>
+            </button>
+        </>
+    )
+}
+
 export const BtnMedium=(props)=>{
     return(
 

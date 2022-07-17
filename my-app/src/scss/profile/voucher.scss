@@ -1,0 +1,17 @@
+.voucher{
+    &-Header{
+        text-align: center;
+        font-size:58px;
+        color:#fff;
+        margin-top: 38px;
+        margin-bottom: 34px;
+    }
+
+    &__container{
+        width:92%;
+        min-height:426px;
+        background-color:#fff;
+        border-radius: 7px;
+        margin-bottom: 37px;
+    }
+}
