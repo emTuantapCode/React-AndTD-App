@@ -1,6 +1,6 @@
 import { Card, Col, Row } from "antd";
 import React from "react";
-import { BtnMedium } from "../btncomponent/btncomponent";
+import { BtnMedium, BtnSmall } from "../btncomponent/btncomponent";
 
 function ProductBox({ src, index, name }) {
   return (
@@ -30,11 +30,11 @@ function ProductBox({ src, index, name }) {
           <Col style={{ minHeight: "50px" }}>Tên sản phẩm : {name}</Col>
         </Row>
         <Row justify="space-between">
-          <Col span={6}>
-            <BtnMedium content="MUA"></BtnMedium>
+          <Col style={{width:"100%"}} span={6}>
+            <BtnSmall content="MUA"></BtnSmall>
           </Col>
-          <Col span={6}>
-            <BtnMedium content="MUA"></BtnMedium>
+          <Col style={{width:"100%"}} span={6}>
+            <BtnSmall content="MUA"></BtnSmall>
           </Col>
         </Row>
       </Card>
