@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,MAAM,CAAA;EACF,KAAK,EAAE,IAAI;EACX,MAAM,EAAC,IAAI;EACX,gBAAgB,EAAC,OAAO;EACxB,aAAa,EAAC,IAAI;EAClB,MAAM,EAAC,IAAI;EACX,aAAa,EAAE,IAAI;CAMtB;;AAZD,AAOI,MAPE,AAOD,MAAM,CAAA;EACH,OAAO,EAAC,IAAI;EACZ,gBAAgB,EAAC,KAAK;CACzB",
-    "sources": [
-        "inputComponent.scss"
-    ],
-    "names": [],
-    "file": "inputComponent.css"
-}
