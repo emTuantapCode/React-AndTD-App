@@ -1,0 +1,38 @@
+.youwantsignup {
+  margin-top: 20px;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  position: relative;
+}
+
+.youwantsignup:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  color: black;
+}
+
+.youwantsignup:active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.youwantsignup::before {
+  content: '';
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  background-color: black;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.youwantsignup:hover::before {
+  -webkit-transform: scaleY(100%);
+          transform: scaleY(100%);
+}
+/*# sourceMappingURL=someText.css.map */

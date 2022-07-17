@@ -1,28 +1,36 @@
 .Home {
   overflow-x: hidden;
 }
+
 .layout-nav-sider {
   background-color: #211d1e;
 }
+
 .layout-category {
   margin-left: 342px;
   margin-top: -1px;
 }
+
 .toll {
+  margin-left: 4px;
   background-color: #211d1e;
   height: 255px;
   width: 80px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 8px;
-
-  .tollfactor {
-    border-radius: 8px;
-    margin-left: auto;
-    margin-top: 17px;
-    padding: 0 4px;
-    width: 80px;
-  }
 }
+
+.toll .tollfactor {
+  border-radius: 8px;
+  margin-left: auto;
+  margin-top: 17px;
+  padding: 0 4px;
+  width: 80px;
+}
+
 .category-products {
   margin-left: 338px;
 }
+/*# sourceMappingURL=home.css.map */

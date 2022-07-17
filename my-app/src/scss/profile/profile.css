@@ -1,0 +1,51 @@
+.profile-options {
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.profile-options__item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 115px;
+  padding-left: 36px;
+}
+
+.profile-options__item:not(:last-child) {
+  border-bottom: 1px solid #000;
+}
+
+.profile-options__icon {
+  color: #4a4545;
+  width: 45px;
+  height: 45px;
+}
+
+.profile-options__text {
+  padding-left: 20px;
+  color: #4a4545;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.profile-active {
+  background-color: #211d1e;
+  color: white;
+}
+
+.profile-active * {
+  background-color: #211d1e;
+  color: white;
+  fill: white;
+}
+/*# sourceMappingURL=profile.css.map */
