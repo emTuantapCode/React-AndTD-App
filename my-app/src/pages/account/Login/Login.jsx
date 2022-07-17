@@ -46,7 +46,7 @@ function SignUp() {
     }
     
     if(submit===true) {
-        if(info.email.length===0&&info.phone.length===0&&temp=='') notiUserName='Vui lòng nhập đúng trường này';
+        if(info.email.length===0&&info.phone.length===0&&temp==='') notiUserName='Vui lòng nhập đúng trường này';
         if(info.password.length===0) notiPassword='Vui lòng nhập đúng trường này';
     }
     const onSubmit=()=>{
