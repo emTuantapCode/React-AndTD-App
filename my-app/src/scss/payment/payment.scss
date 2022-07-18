@@ -1,0 +1,29 @@
+.payment{
+    &__container{
+        width: 979px;
+        height: 1031px;
+        background-color: #fff;
+        border-radius:24px;
+        border: 14px solid #211d1e;
+        margin-top: 56px;
+        display:flex;
+        flex-direction:column;
+        align-items:center; 
+    }
+
+    &__infoUser{
+        display:flex;
+        flex-direction:column;
+        margin-top: 50px;
+        margin-bottom: 91px;
+        align-items:center;
+    }
+
+    &__title{
+        font-size:21px;
+        color:#211d1e;
+        font-weight:bold;
+        margin-bottom: 48px;
+        padding: 0;
+    }
+}
