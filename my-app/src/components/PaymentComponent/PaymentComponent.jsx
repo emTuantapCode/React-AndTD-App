@@ -27,6 +27,7 @@ const PaymentComponent=(props)=>{
                     <Input content='Email(Vui lòng nhập email để nhận hóa đơn VAT)'></Input>
                 </div>
 
+
                 <div className="payment__shipWay">
                     <p className="payment__title montserrat">Chọn cách thức giao hàng</p>
                     <Radio.Group onChange={onChange} value={value}>
