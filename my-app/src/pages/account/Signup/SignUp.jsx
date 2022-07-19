@@ -73,13 +73,13 @@ function SignUp() {
           <img src={logo} style={{paddingBottom:50+'px'}} />
           <p className='signin-text__bold'>Số điện thoại/Email:</p>
           <Input type='text' min="" max="" takeInput={takeUserNameInfo} ></Input>
-          <p>{submit?notiUserName:''}</p>
+          <p style={{color:'red',fontSize:'14px',fontWeight:'500'}}>{submit?notiUserName:''}</p>
           <p className='signin-text__bold'>Mật khẩu:</p>
           <Input type='password' min="" max="" takeInput={takePasswordInfo}></Input>
-          <p>{submit?notiPassword:''}</p>
+          <p style={{color:'red',fontSize:'14px',fontWeight:'500'}}>{submit?notiPassword:''}</p>
           <p className='signin-text__bold'>Nhập lại khẩu:</p>
           <Input type='password' min="" max="" takeInput={takeReWritePasswordInfo}></Input>
-          <p>{submit?notiReWritePassword:''}</p>
+          <p style={{color:'red',fontSize:'14px',fontWeight:'500'}}>{submit?notiReWritePassword:''}</p>
           <div style={{alignSelf:'end',marginTop:30+'px',}} onClick={onSubmit}>
             <BtnExtra content="Đăng kí" ></BtnExtra>
           </div>

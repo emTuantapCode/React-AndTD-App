@@ -1,0 +1,16 @@
+.container-nav{
+    background-color: #211D1E;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+
+    .logo{
+        padding-left: 12px;
+    }
+    .icon-nav{
+        padding: 0 10px;
+        :hover{
+            cursor: pointer;
+        }
+    }
+}

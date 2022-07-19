@@ -1,8 +1,8 @@
 import { Card, Col, Row } from "antd";
 import React from "react";
-import { BtnMedium, BtnSmall } from "../btncomponent/btncomponent";
+import { BtnMedium } from "../btncomponent/btncomponent";
 
-function ProductBox({ src, index, name }) {
+function ProductBox({ src, index, name, price }) {
   return (
     <>
       <Card
@@ -27,14 +27,17 @@ function ProductBox({ src, index, name }) {
         }
       >
         <Row>
-          <Col style={{ minHeight: "50px" }}>Tên sản phẩm : {name}</Col>
+          <Col style={{ minHeight: "50px" }}>{name}</Col>
+        </Row>
+        <Row>
+          <Col style={{ minHeight: "50px" }}>Giá : {price}</Col>
         </Row>
         <Row justify="space-between">
-          <Col style={{width:"100%"}} span={6}>
-            <BtnSmall content="MUA"></BtnSmall>
+          <Col span={6}>
+            <BtnMedium content="MUA"></BtnMedium>
           </Col>
-          <Col style={{width:"100%"}} span={6}>
-            <BtnSmall content="MUA"></BtnSmall>
+          <Col span={15}>
+            <BtnMedium content="Thêm vào Giỏ"></BtnMedium>
           </Col>
         </Row>
       </Card>

@@ -37,9 +37,9 @@ function Home() {
   return (
     <>
       <Popup />
-      <Row className="Home">
+      <Row className="Home" gutter={8}>
         <NavSider />
-
+        <Col span={6}></Col>
         <Col span={18} className="layout-category">
           <Row gutter={8} className="slider-toll">
             <Col span={22} className="top-trending">
@@ -126,6 +126,7 @@ function Home() {
                     src={item.image.src}
                     name={item.productName}
                     index={index}
+                    price={item.price}
                   />
                 </Col>
               );
