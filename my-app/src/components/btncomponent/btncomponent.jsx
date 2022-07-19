@@ -36,7 +36,7 @@ export const BtnExtra = (props) => {
   return (
     <>
       <button className={"btn montserrat"}>
-            <span className={"btn-content__extra"}>{props.content}</span>
+        <span className={"btn-content__extra"}>{props.content}</span>
       </button>
     </>
   );
