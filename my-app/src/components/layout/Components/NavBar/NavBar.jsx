@@ -1,7 +1,7 @@
 import logo from "../../../../asset/logo-icon.png"
 import notification from '../../../../asset/icon/Notificatons.svg'
 import cart from '../../../../asset/icon/Cart.svg'
-import user from '../../../../asset/icon/User.svg'
+import user from '../../../../asset/icon/user.svg'
 import '../../../../scss/Navbar.scss'
 import { Row, Col } from "antd";
 
