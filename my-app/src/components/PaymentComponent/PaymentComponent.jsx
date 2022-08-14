@@ -74,6 +74,9 @@ const PaymentComponent = (props) => {
       return { ...prev, note: note };
     });
   };
+  const check = () => {
+    
+  };
   console.log(buyInfo);
   return (
     <>
@@ -154,8 +157,9 @@ const PaymentComponent = (props) => {
               addInfo={addNote}
             />
           </div>
-
-          <BtnMedium content="Hoàn thành"></BtnMedium>
+          <div onClick={check}>
+            <BtnMedium content="Hoàn thành"></BtnMedium>
+          </div>
         </div>
       </div>
     </>

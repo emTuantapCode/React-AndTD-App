@@ -10,6 +10,8 @@ export const BtnSmall = (props) => {
       </button>
     </>
   );
+
+  
 };
 
 export const BtnMedium = (props) => {
