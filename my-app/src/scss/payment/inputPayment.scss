@@ -1,0 +1,33 @@
+.inputPayment {
+  &--small,
+  &--medium,
+  &--large {
+    border: none;
+    background-color: rgba(217, 217, 217);
+    outline: none;
+    border-radius: 3px;
+  }
+
+  &--medium,
+  &--small {
+    height: 100%;
+  }
+  &--large {
+    width: 100%;
+    height: 39px;
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &--small {
+    width: 46%;
+    &:not(:first-child) {
+      margin-left: 53px;
+    }
+  }
+
+  &--medium {
+    width: 99%;
+  }
+}

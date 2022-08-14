@@ -64,10 +64,10 @@ function SignUp() {
           <img src={logo} style={{paddingBottom:50+'px'}} />
           <p className='signin-text__bold'>Số điện thoại/Email:</p>
           <Input type='text' min="" max="" takeInput={takeUserNameInfo} ></Input>
-          <p>{submit?notiUserName:''}</p>
+          <p style={{color:'red',fontSize:'14px',fontWeight:'500'}}>{submit?notiUserName:''}</p>
           <p className='signin-text__bold'>Mật khẩu:</p>
-          <Input type='password' min="" max="" takeInput={takePasswordInfo}></Input>
-          <p>{submit?notiPassword:''}</p>
+          <Input type='password' min="" max="" takeInput={takePasswordInfo} ></Input>
+          <p style={{color:'red',fontSize:'14px',fontWeight:'500'}}>{submit?notiPassword:''}</p>
           <div style={{alignSelf:'end',marginTop:40+'px',}} onClick={onSubmit}>
             <BtnExtra content="Đăng nhập" ></BtnExtra>
           </div>
