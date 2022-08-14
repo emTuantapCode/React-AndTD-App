@@ -2,11 +2,10 @@ import { Col, Row, Carousel } from "antd";
 import NavSider from "../../../components/layout/navSidebar";
 import Popup from "../../../components/Popup/Popup";
 import ProductBox from "../../../components/productBoxComponent/productBox";
-import React from "react";
 import ApiProduct from "../../../api/apiProducts";
 import { useState, useEffect } from "react";
 import "../../../scss/home.scss";
-
+import { useSelector } from "react-redux";
 const contentStyle = {
   height: "255px",
   color: "#fff",
@@ -26,13 +25,32 @@ function handleaccount() {
 
 function Home() {
   const [productList, setProductList] = useState([]);
-  useEffect(() => {
-    const fetchProductList = async () => {
-      const respones = await ApiProduct.getAll();
-      setProductList(respones);
-    };
-    fetchProductList();
-  }, []);
+  const list = useSelector((state) => {
+    return state?.fillter?.type;
+  });
+  const brand = useSelector((state) => {
+    console.log(state);
+    return state?.fillter?.brand;
+  });
+  console.log(brand);
+  try {
+    useEffect(() => {
+      const fetchProductList = async () => {
+        const id = {
+          page: 1,
+          label: brand,
+        };
+        console.log(id);
+        const respones = await ApiProduct.getAll(id);
+        console.log(respones);
+
+        setProductList(respones.dataProduct[list][brand]);
+      };
+      fetchProductList();
+    }, [brand]);
+  } catch (err) {
+    console.log("err");
+  }
 
   return (
     <>
@@ -119,11 +137,11 @@ function Home() {
             </Col>
           </Row>
           <Row gutter={8}>
-            {productList.map((item, index) => {
+            {productList?.map((item, index) => {
               return (
-                <Col span={6}>
+                <Col span={6} key={index}>
                   <ProductBox
-                    src={item.image.src}
+                    src="https://cdn.tgdd.vn/Products/Images/42/153856/iphone-xi-tim-200x200.jpg"
                     name={item.productName}
                     index={index}
                     price={item.price}

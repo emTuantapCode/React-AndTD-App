@@ -1,17 +1,27 @@
-import { useState } from "react";
+import React from "react";
 import "../../scss/signinsignup/inputComponent.scss";
-
-const Input=(props)=>{
-    const [enteredInput,setEnteredInput]=useState('');
-    const getInput=(e)=>{
-        setEnteredInput(e.target.value);
-        props.takeInput(enteredInput);
-    }
-    return (
-        <>
-            <input type={props.type} min={props.min} max={props.max} className='input' onChange={getInput}/>
-        </>
-    )
+import { useForm } from "react-hook-form";
+export function Input({ register, name, ...rest }) {
+  return <input {...register(name)} {...rest} />;
 }
 
-export default Input;
+export function Form({ defaultValues, children, onSubmit }) {
+  const methods = useForm({ defaultValues });
+  const { handleSubmit } = methods;
+
+  return (
+    <form onSubmit={handleSubmit(onSubmit)}>
+      {React.Children.map(children, (child) => {
+        return child.props.name
+          ? React.createElement(child.type, {
+              ...{
+                ...child.props,
+                register: methods.register,
+                key: child.props.name,
+              },
+            })
+          : child;
+      })}
+    </form>
+  );
+}
